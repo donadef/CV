@@ -1,6 +1,6 @@
 [submodule "themes/hugo-orbit-theme"]
 	path = themes/hugo-orbit-theme
-	url = https://github.com/aerohub/hugo-orbit-theme
+	url = https://github.com/aerohub/hugo-orbit-theme.git
 [submodule "public"]
 	path = public
-	url = git@github.com:donadef/donadef.github.io.git
+	url = https://github.com/donadef/donadef.github.io.git
