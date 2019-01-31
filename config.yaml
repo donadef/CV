@@ -1,0 +1,252 @@
+baseURL:                 https://ankhterus.github.io/
+theme:                   hugo-orbit-theme
+
+defaultcontentlanguage:  fr
+disable404:              true
+disablerss:              true
+disablesitemap:          true
+
+googleAnalytics:         UA-108139175-1
+
+params:
+  # Metadata
+  author:                Nicolas Gagnière
+  title:                 Nicolas Gagnière - CV
+  description:           Nicolas Gagnière CV
+  styles:                styles-4.css
+
+# Sidebar
+  profile:
+    name:                Nicolas Gagnière
+    tagline:             Amateur de Bretzels
+    avatar:              profile.png
+
+  contact:
+    enable:              true
+    list:
+      - class:           email
+        icon:            fa-envelope
+        url:             mailto:nicolas.gagniere@gmail.com
+        title:           nicolas.gagniere@gmail.com
+
+      - class:           linkedin
+        icon:            fa-linkedin
+        url:             //linkedin.com/in/nicolasgagniere
+        title:           linkedin.com/in/nicolasgagniere
+
+      - class:           website
+        icon:            fa-globe
+        url:             //ankhterus.github.io/
+        title:           ankhterus.github.io
+
+      - class:           github
+        icon:            fa-github
+        url:             //github.com/Ankhterus
+        title:           github.com/Ankhterus
+
+  education:
+    enable:              true
+    list:
+      - degree:          Doctorat de Bioinformatique
+        college:         Université de Strasbourg / IGBMC
+        dates:           sept. 2006 - oct. 2009
+
+  language:
+    enable:              true
+    list:
+      - language:        Français
+        level:           Natif
+      - language:        Anglais
+        level:           Courant
+
+  interests:
+    enable:              true
+    list:
+      - interest:        Escalade
+      - interest:        Geekeries
+
+# Main content
+  summary:
+    enable:              true
+    icon:                fa-user
+    summary:             |
+        Parti d'un bac technologique en biologie (STL BGB), d'études courtes en études courtes en passant par une thèse en Bioinformatique, je me suis peu à peu réorienté vers l'informatique pour laquelle j'ai une affinité particulière après avoir été élevé par un C64 à grand renforts de POKE et PEEK.
+
+        Mes passages au sein de plusieurs équipes hétéroclites et pluridisciplinaires et ma curiosité m'ont permis de régulièrement challenger et étendre mes compétences de développement en divers langages/_frameworks_, ainsi qu'en administration systèmes et réseaux Linux.
+
+        En combinaison avec une veille technologique constante, j'ai ainsi acquis une bonne vision globale de l'informatique en général, ce qui me permet de m'orienter relativement rapidement vers une solution.
+
+  experiences:
+    enable:              true
+    icon:                fa-briefcase
+  jobs:
+    list:
+      # - position:        À la recherche de l'emploi perdu
+      #   dates:           Actuellement
+      #   company:         Continent perdu Bhâ-Rihnoâh
+      #   details:         |
+      #     Je pars à l'aventure au sein de la jungle de la recherche d'emploi afin de retrouver l’artefact du _CDI-au-projet-sympa-et-stimulant_. Si vous recherchez un _lead developer_ sur Strasbourg ou sa région, n'hésitez pas à me contacter.
+
+      - position:        Consultant Java
+        dates:           juin 2018 - Aujourd'hui
+        company:         Astek, Strasbourg
+        details:         |
+          Je découvre le monde des ESN tout en m'amusant au sein d'une équipe soudée. Merci de m'avoir fait confiance !
+
+      - position:        Directeur technique
+        dates:           oct. 2010 - janv. 2018
+        company:         Bionext S.A., Strasbourg
+        details:         |
+          J'ai dirigé l'équipe technique de 4 personnes (3 permanents et 1 temps partiel), en charge du développement et du déploiement de _BioSight_, une application permettant la comparaison de surfaces moléculaires dans le cadre de la recherche et du développement de cibles thérapeutiques à l'aide d'un algorithme développé en interne par l'équipe R&D.
+
+          Je me suis occupé personnellement d'intégrer cet algorithme au sein d'une nouvelle architecture de calculs distribués. Cela comprend :
+
+          * la gestion de l'_Extract-Transform-Load_ des données au sein de _HBase_ et des index _Elasticsearch_,
+          * le développement de _jobs Mapreduce_ et leur organisation en _workflows Oozie_
+          * la mise à disposition de l'architecture de calculs au portail _BioSight_ par l'intermédiaire d'un _WebService REST_,
+          * le déploiement _bare-metal_ des serveurs à l'aide de _MAAS_ et d'_Ansible_.
+
+          Tâches annexes :
+
+          * développement du logiciel de visualisation moléculaire interne _BioViz_ (Java),
+          * déploiement de toute l'infrastructure du site de Strasbourg (serveurs, stockages réseaux, postes clients, git, _team chat_, wiki, DNS dynamique, sauvegardes...) accessible de manière sécurisée par certificats SSH et TLS.
+
+      - position:        Doctorant chercheur
+        dates:           sept. 2006 - oct. 2009
+        company:         IGBMC, Illkirch-Graffenstaden
+        details:         |
+          J'ai développé une suite logicielle permettant de traiter et d'annoter les données de séquençage issues de plusieurs banques d'ADNc de tissus de l'annélide polychète _Alvinella pompejana_ (ver de Pompéi) afin de l'étudier sous différents aspects (phylogénétique moléculaire, résistances aux conditions extrêmes...).
+
+          Cette suite a été développée en Tcl/Tk afin d'être intégrée à la plate-forme logicielle du laboratoire développée dans ce même langage. Un site Web permettant aux membres du consortium _Alvinella_ de parcourir le résultat de ces annotations a été développé en PHP4.
+
+          Manuscript disponible à cette adresse : http://scd-theses.u-strasbg.fr/1814/
+
+  projects:
+    enable:              true
+    icon:                fa-archive
+    # intro:             |
+    list:
+      - title:           BioSight
+        url:             https://biosight.bionext.com/
+        tagline:         |
+          Portail d'accès _Software as a Service_ de BioSight, application principale de Bionext permettant la comparaison de surfaces moléculaires dans le cadre de la conception de médicaments.
+
+          Technologies : Hadoop, YARN/MapReduce2, HBase, Oozie, Elasticsearch, Hibernate, Jersey
+
+      - title:           Alvinella cDNA
+        url:             http://lbgi.fr/Alvinella/
+        tagline:         |
+          Portail de partage et de recherches au sein des résultats de traitements et d'annotations des données de séquençage d'_Alvinella pompejana_.
+
+          Technologies : PHP4, ADOdb, PostgreSQL, Smarty, MVC. (Portage Symfony 1.0/Doctrine non finalisé)
+
+  skills:
+    enable:              true
+    icon:                fa-rocket
+    list:
+      - section:         Cloud computing
+      - skill:           Hadoop/MapReduce
+        level:           90%
+      - skill:           HBase
+        level:           90%
+      - skill:           Oozie
+        level:           60%
+      - skill:           Elasticsearch
+        level:           75%
+      - skill:           Cassandra
+        level:           40%
+      - skill:           Logstash
+        level:           60%
+      - skill:           Kibana
+        level:           50%
+
+      - section:         Provisioning
+      - skill:           Kubernetes
+        level:           75%
+      - skill:           Docker
+        level:           85%
+      - skill:           Vagrant / VirtualBox
+        level:           80%
+      - skill:           Ansible
+        level:           80%
+      - skill:           MAAS
+        level:           66%
+
+      - section:         Java
+      - skill:           Java 1x
+        level:           100%
+      - skill:           Maven
+        level:           90%
+      - skill:           Gradle
+        level:           50%
+      - skill:           Spring Boot
+        level:           60%
+      - skill:           Hibernate / JPA
+        level:           95%
+      - skill:           Jersey / JAX-RS
+        level:           95%
+      - skill:           JAXB
+        level:           95%
+      - skill:           ProGuard
+        level:           85%
+      - skill:           javacc
+        level:           80%
+
+      - section:         Autres langages / frameworks
+      - skill:           HTML 5
+        level:           80%
+      - skill:           CSS 3
+        level:           70%
+      - skill:           Javascript
+        level:           85%
+      - skill:           jQuery/ jQuery UI
+        level:           90%
+      - skill:           Bootstrap
+        level:           40%
+      - skill:           Grails
+        level:           50%
+      - skill:           Python 3
+        level:           40%
+      - skill:           NodeJS / Express
+        level:           65%
+
+      - section:         Développement
+      - skill:           Gitlab CI/CD
+        level:           70%
+      - skill:           Git
+        level:           95%
+      - skill:           Subversion
+        level:           95%
+
+      - section:         Bases de données
+      - skill:           PostgreSQL
+        level:           95%
+      - skill:           MySQL
+        level:           85%
+      - skill:           H2
+        level:           84%
+      - skill:           SQLite
+        level:           70%
+
+      - section:         Sysadmin
+      - skill:           Ubuntu / Debian
+        level:           95%
+      - skill:           Open/LibreSSL
+        level:           90%
+      - skill:           Apache HTTPD
+        level:           90%
+      - skill:           Nginx
+        level:           50%
+      - skill:           HAproxy
+        level:           60%
+      - skill:           Gitlab
+        level:           95%
+      - skill:           Mattermost
+        level:           70%
+      - skill:           Mediawiki
+        level:           80%
+      - skill:           Apache Archiva
+        level:           85%
+
+  footer:
+    copyright:           ""

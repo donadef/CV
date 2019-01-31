@@ -1,0 +1,14 @@
+- id: education
+  translation: Formation
+- id: experiences
+  translation: Expériences
+- id: interests
+  translation: Centres d’intérêt
+- id: language
+  translation: Langues
+- id: projects
+  translation: Réalisations
+- id: skills
+  translation: Compétences et maîtrise
+- id: summary
+  translation: Parcours professionnel
